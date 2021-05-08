@@ -1,0 +1,6 @@
+node_modules
+.storybook
+.vscode
+prototype
+public
+*.min.*

@@ -1,0 +1,29 @@
+@import 'reset';
+@import 'fonts';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @include paragraph;
+}
+
+.app-container {
+  height: 100%;
+
+  a {
+    @include links;
+  }
+
+  h1 {
+    @include title;
+  }
+}

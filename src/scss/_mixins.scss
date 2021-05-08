@@ -1,0 +1,80 @@
+@import 'variables';
+
+@mixin default-font {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin code-font {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+@mixin body {
+  font-size: 1em;
+  font-weight: 400;
+  color: $colour-black;
+}
+
+@mixin header1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: $main-colour;
+}
+
+@mixin header2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: $secondary-colour;
+}
+
+@mixin header3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: $secondary-colour;
+}
+
+@mixin header4 {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: $secondary-colour;
+}
+
+@mixin links {
+  font-size: 1em;
+  font-weight: 400;
+  color: $main-colour;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-colour;
+  }
+}
+
+@mixin paragraph {
+  @include body;
+  @include default-font;
+}
+
+@mixin code-block {
+  @include body;
+  @include code-font;
+}
+
+@mixin title {
+  @include header1;
+  @include default-font;
+}
+
+@mixin subtitle1 {
+  @include header2;
+  @include default-font;
+}
+
+@mixin subtitle2 {
+  @include header3;
+  @include default-font;
+}
+
+@mixin legend {
+  @include header4;
+  @include default-font;
+}
