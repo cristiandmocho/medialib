@@ -1,14 +1,24 @@
 {
   "name": "medialib",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Cristian Mocho <cristiandmocho@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.12"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
